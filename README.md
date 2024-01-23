@@ -22,6 +22,9 @@ Next, create a virtual environment and install the dependencies with Poetry:
 ```bash
 python -m venv .venv
 source ./.venv/bin/activate
+poetry install
+uvicorn distilgpt2_api.api:app --reload
+
 ```
 
 Now you're ready to get coding to turn this template into a fully working GPT2-text-generation-as-a-service!
